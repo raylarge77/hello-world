@@ -2,6 +2,5 @@ FROM node:4.4
 EXPOSE 8080
 COPY server.js .
 CMD node server.js
-COPY curl.bat
-CMD curl.bat
+CMD http://127.0.0.1:1337/
 
